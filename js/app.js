@@ -1,10 +1,3 @@
-//   Author: Niall Maher
-//   Assignment: BSc Mobile  Web Applications,   Digital Skills  Academy
-//   Date    :   2016/12/05
-//   Ref:   Data for JSON - http://www.json-generator.com/
-//           
-
-
 //pageinit event triggers only once
 $(document).on("pageinit", "#info-page", function () {   
     //on pageinit json is collected and parsed
