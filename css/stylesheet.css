@@ -1,0 +1,30 @@
+/*   
+	Author: Niall Maher
+    Assignment: BSc Mobile  Web Applications,   Digital Skills  Academy
+    Date    :   2016/12/05
+    Ref:   google fonts for import
+*/      
+
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+.ui-bar {
+	font-weight : bold; 
+	text-align: left;
+    padding :10px 0px 10px 0px !important;
+    margin :5px 0px 5px 0px !important;
+}
+
+#myPanel {
+	text-align: center;
+}
+
+.cool-text {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.roundy {
+	border-radius: 10px;
+}
+
+.italic-note {
+	font-size: .7em;
+}

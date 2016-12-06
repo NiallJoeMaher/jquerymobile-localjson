@@ -1,0 +1,62 @@
+<!--    
+*       Author: Niall Maher
+*       Assignment: BSc Mobile  Web Applications,   Digital Skills  Academy
+*       Date:   2016/12/05
+*       Ref:   none
+ -->     
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- jquery is deliverd via a cdn, so internet connection is required to run application -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="themes/purple.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css">
+    <title>Employee Database</title>
+</head>
+
+<body>
+    <div data-role="page" id="info-page">
+    <!-- Side panel content -->
+        <div data-role="panel" id="myPanel" data-display="overlay">
+            <h2 class="cool-text">Instructions</h2>
+            <p>
+                Type in the search box to start looking.
+                <br>
+                <br> If employee exists it will automatically populate.
+                <br>
+                <br> Click on employee to find more information.
+                <br>
+                <br>
+                <i class="italic-note">Make sure you open this application on a local server or the data might not load due to security restrictions in some browsers.</i>
+            </p>
+            <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline roundy">Close Panel</a>
+        </div>
+        <!-- Page content -->
+        <div data-role="header" data-theme="b">
+            <a href="#myPanel" class="ui-btn ui-btn-inline roundy">Instructions Panel</a>
+            <h1 class="cool-text">Type to search</h1>
+        </div>
+        <div data-role="content">
+            <!-- Data injected into this section from app.js -->
+            <ul data-filter="true" data-filter-reveal="true" data-role="listview" id="prof-list" data-divider-theme="a" data-inset="true">
+                <li data-role="list-divider" data-theme="b" role="heading">Names</li>
+            </ul>
+        </div>
+    </div>
+    <!--second page -->
+    <div data-role="page" id="details-page">
+        <div data-role="header" data-theme="b"><a href="#" data-rel="back" data-role="button">Go back</a>
+            <h1>Employee Details</h1>
+        </div>
+        <div data-role="content"></div>
+    </div>
+</body>
+
+</html>
